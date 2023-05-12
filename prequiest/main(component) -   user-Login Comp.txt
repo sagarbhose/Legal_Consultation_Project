@@ -1,0 +1,17 @@
+main(component) ->   user-Login Component(valid) ------------------------------------>
+								 ->(forget)->Reset Password Component
+
+		    ->   Signup component(Redirect->login)
+
+	    
+		   ->    (if user,if not redirect to login comp)  Ask_a_question Component-> Question_Answer Component(Ans)
+
+		
+
+		   ->    Find Lawyers
+
+		   ->
+
+
+
+	   Lawyer

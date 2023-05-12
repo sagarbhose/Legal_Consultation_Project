@@ -1,0 +1,18 @@
+user-
+1. find a lawyer
+2. ask a question forum
+3. check your question already answered in forum
+4. hire the lawyer
+5. ipc Sections Findings
+6. Login
+7. Register
+
+
+Laywer-
+
+1. Answer the forum
+2. Handle clients 
+3. ipc Sections Findings
+4. Login
+5. Register
+6. Update

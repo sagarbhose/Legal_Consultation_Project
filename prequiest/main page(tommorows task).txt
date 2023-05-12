@@ -1,0 +1,6 @@
+main page(tommorows task)
+1.header
+2.answers
+3.lawyers
+4.(3-cards)=>	|Ask a question  | Talk to Lawyer | hire a lawyer |
+5.Footer banana padega
