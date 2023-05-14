@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="SignIn">Signin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <form class="d-flex" #regForm="ngForm" (ngSubmit)="submitform(regForm.value)">
+            <input class="form-control me-sm-2" type="search" name="ipc_f" #ipc_f="ngModel" placeholder="Search" ngModel>
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit" fdprocessedid="lwhku2" >Search</button>
+          </form>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <div class="container" style="margin-top: 100px;">
+    <h2>Employee List</h2>
+    <table class="table table-bordered table-stripped table-condensed">
+      <thead>
+        <tr class="bg-primary">
+          <th>Chapter</th>
+          <th>Section</th>
+          <th>Chapter Title</th>
+          <th>Section Title</th>
+          <th>Section Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of ipcList">
+            <td>{{ emp.chapter }}</td>
+            <td>{{ emp.section }}</td>
+            <td>{{ emp.chapter_title }}</td>
+            <td>{{ emp.section_title }}</td>
+            <td>{{ emp.section_desc }}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>

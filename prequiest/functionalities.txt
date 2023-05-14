@@ -36,8 +36,8 @@ Entities for Lawyer
 2.answer(Lawyer,Answerid(pk,(auto generated)),Answer,QuestionId(fk))
 
 Other Entity 
-1. Forum(Questions,answers,User,Lawyer)
-
-
+1. Forum(Questionid,answerid,User,Lawyer)
+2. ForumQuestion(Questionid(primary-key),QuestionTitle,QuestionDesc)
+3. ForumAnswer(Answerid(pk,(auto generated)),Answer,QuestionId(fk))
 persistance
 
