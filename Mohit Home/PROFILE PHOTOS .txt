@@ -1,0 +1,62 @@
+PROFILE PHOTOS :
+"E:\Day3\photos\1.jpg"
+"E:\Day3\photos\2.png"
+"E:\Day3\photos\3.jpeg"
+"E:\Day3\photos\4.jpg"
+"E:\Day3\photos\5.jpg"
+"E:\Day3\photos\6.jpeg"
+"E:\Day3\photos\7.jpeg"
+"E:\Day3\photos\8.jpeg"
+"E:\Day3\photos\9.png"
+"E:\Day3\photos\10.jpeg"
+"E:\Day3\photos\11.jpeg"
+"E:\Day3\photos\12.jpg"
+"E:\Day3\photos\13.jpeg"
+"E:\Day3\photos\14.jpeg"
+"E:\Day3\photos\15.jpg"
+"E:\Day3\photos\16.jpg"
+"E:\Day3\photos\17.jpg"
+"E:\Day3\photos\18.jpeg"
+"E:\Day3\photos\19.jpeg"
+
+DOMAINS :
+family
+property
+criminal
+civil
+consumer
+business
+labour
+consitututional
+intellectual
+
+
+
+LAWYER DATA :
+insert into lawyer(lid, availibility, city, domain, experience, imgpath, lemail, license_no, lmobile, lname,lpassword,pincode, state)
+values(1,"available","Nagpur","Family",2,"E:\Day3\photos\1.jpg","munnatripathi@gmail.com","LN101","0123456789","Munna Tripathi","munna@123","423233","Maharashtra"),
+(2,"notavailable","Nashik","Criminal",1,"E:\Day3\photos\2.png","mohitkatare4@gmail.com","LN102","0123456789","Mohit Katare","mohit@123","422222","Maharashtra"),
+(3,"available","Mumbai","Civil",4,"E:\Day3\photos\3.jpeg","prathameshkodag@gmail.com","LN103","0123456789","Prathamesh kodag","prathamesh@123","423343","Maharashtra"),
+(4,"notavailable","Sagar","Family",3,"E:\Day3\photos\4.jpg","gpiyush.329@gmail.com","LN104","0123456789","Piyush Gupta","piyush@123","421212","Maharashtra"),
+(5,"notavailable","Solapur","Family",6,"E:\Day3\photos\5.jpg","minakshiwangdare@gmail.com","LN105","0123456789","Minakshi Wangdare","minakshi@123","421133","Maharashtra"),
+(6,"available","Mumbai","Family",10,"E:\Day3\photos\6.jpg","mcstan123@gmail.com","LN106","0123456789","Mc Stan","stan@123","4232443","Maharashtra");
+
+
+CLIENT DATA:
+insert into client(cid, caddress, cemail, city, cmoblile, cname, cpass, pincode,state, lid)
+values(1,"Nashik road","mohitkatare32@gmail.com","Nashik","0123456789","Soham","soham@123","4222222","Maharashtra",2),
+(2,"Nagpur katol","prathameshk2000@gmail.com","Nagpur","0123456789","Sumukha","soham@123","4221212","Maharashtra",1),
+(3,"Mumbai palghar","soulaggera@gmail.com","Mumbai","0123456789","Jamir","soham@123","42245455","Maharashtra",3),
+(4,"Sagar deori","gpiyush.328@gmail.com","Sagar","0123456789","Akshay","soham@123","45657677","Maharashtra",6);
+
+
+
+
+QUESTION DATA:
+insert into question(qid, domain, qdesc, qtitle, cid) 
+values(1,"Property","Me and my husband separated from last 20 years. As he was not working and was not mentally fit also. No proper case filed nor proper court order received.
+Anyway I need some advice regarding his property.","Property of mentally unwell husband",1),
+(2,"Family","Me and my husband separated from last 20 years. As he was not working and was not mentally fit also. No proper case filed, nor proper court order received.
+Anyway, I need some advice regarding his property.","My wife threatened my family with suicide and left",3);
+
+
