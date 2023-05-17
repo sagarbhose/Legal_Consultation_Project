@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="home.component.css">
   <title>Document</title>
 </head>
-
 <body>
   <div class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -23,19 +21,27 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/ask-a-lawyer">Ask a Question</a>
+            <a class="nav-link" *ngIf="userloggedin; else loginLink" [routerLink]="['/Ask-Question']">Ask a Question</a>
+          </li>
+          
+          <ng-template #loginLink>
+            <a class="nav-link" [routerLink]="['/app-login']">Ask a Question</a>
+          </ng-template>
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="app-talk-to-a-lawyer">Talk to a lawyer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/talk-to-a-lawyer">Talk to a lawyer</a>
+            <a class="nav-link" routerLink="">Lawyers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/lawyers">Lawyers</a>
+            <a class="nav-link" routerLink="app-ipc">Find A Section/Ipc</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/signin">Sign in</a>
+            <a class="nav-link" routerLink="app-login">Sign in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/for-lawyers">Sign up as a lawyer</a>
+            <a class="nav-link" routerLink="app-lawyer-login">Sign in as a lawyer</a>
           </li>
         </ul>
       </div>

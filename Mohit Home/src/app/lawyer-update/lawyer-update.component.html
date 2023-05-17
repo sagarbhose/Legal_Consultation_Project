@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <img src="assets/images/Sign In.png" alt="Login Logo" class="registration-logo">
+    </div>
+    <h4>SIGN UP</h4>
+    <form class="form-horizontal" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="text" name="name" id="name" placeholder="Full Name" required [(ngModel)]="formData.lname">
+      </div>
+    
+      <div class="form-group">
+        <input type="email" name="email" id="email" placeholder="Email Address" required [(ngModel)]="formData.lemail">
+      </div>
+    
+      <div class="form-group">
+        <input type="number" name="mobile_no" id="mobile_no" placeholder="Mobile Number (10-digit)" required [(ngModel)]="formData.lmobile">
+      </div>
+
+    
+      <div class="form-group">
+        <input type="text" name="domain" id="domain" placeholder="Domain" required [(ngModel)]="formData.domain">
+      </div>
+    
+      <div class="form-group">
+        <input type="number" name="license_no" id="license_no" placeholder="License Number" required [(ngModel)]="formData.license_no">
+      </div>
+    
+      <div class="form-group">
+        <input type="number" name="experience" id="experience" placeholder="Experience in Years" required [(ngModel)]="formData.experience">
+      </div>
+    
+      <div class="form-group">
+        <input type="text" name="city" id="city" placeholder="City" required [(ngModel)]="formData.city">
+      </div>
+    
+      <div class="form-group">
+        <input type="text" name="state" id="state" placeholder="State" required [(ngModel)]="formData.state">
+      </div>
+    
+      <div class="form-group">
+        <input type="number" name="pincode" id="pincode" placeholder="Pin Code" required [(ngModel)]="formData.pincode">
+      </div>
+    
+      <div class="form-group">
+        <input type="password" name="password" id="password" placeholder="New Password" required [(ngModel)]="formData.lpassword">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Update">
+      </div>
+      <!-- <div class="form-group">
+        <a href="#">Forgot Password?</a>
+      </div> -->
+      
+      <!-- <div class="divider">
+        <div class="line"></div>
+        <span class="or">or</span>
+        <div class="line"></div>
+      </div>      
+      <div class="form-group">
+        <button type="button" class="btn btn-default">
+          <i class="fa fa-google"></i> Sign in with Google
+        </button>
+      </div> -->
+    </form>
+  </div>
+</body>
+</html>

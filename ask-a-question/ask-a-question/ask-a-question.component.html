@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <h3>Ask Multiple Lawyers</h3>
+
+    <form class="form-horizontal" method="post">
+        <p class="form-horizontal" style="float: left; margin-left: 20px;">Get legal advice from multiple lawyers</p>
+        
+        <div class="form-group">
+            <select ngModel>
+                <option>Area of Law</option>
+                <option>Family Law</option>
+                <option>Property Law</option>
+                <option>Criminal Law</option>
+                <option>Civil Law</option>
+                <option>Consumer Law</option>
+                <option>Business Law</option>
+                <option>Labour</option>
+                <option>Constitutional Law</option>
+                <option>Intellectual Property</option>
+                <option>Taxation</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="question" id="question" placeholder="Question title" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <textarea  id="exampleFormControlTextarea1" rows="5" placeholder="Type your question here" ngModel required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <!-- <input type="text" name="mycity" id="mycity" placeholder="My City" ngModel required> -->
+            <input type="text" name="city" class="form-control" id="exampleFormControlInput1" placeholder="My City" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="mystate" id="mystate" placeholder="My State" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <input type="number" name="pincode" id="pincode" placeholder="Pin Code" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <input type="number" name="mynumber" id="mynumber" placeholder="My Mobile Number (Optional)" ngModel>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" ngModel required><b> I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></b>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Continue">
+        </div>
+
+    </form>
+  </div>
+</body>
+</html>
