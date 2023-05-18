@@ -7,7 +7,7 @@
 /bazel-out
 
 # Node
-/Angular/Legal_Consulation_Angular/Legal_Consulation_Angular/node_modules
+/node_modules
 npm-debug.log
 yarn-error.log
 
