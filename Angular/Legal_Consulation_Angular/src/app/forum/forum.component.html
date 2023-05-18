@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+    <h2>QUESTIONS</h2>
+    <table class="table table-bordered table-striped table-condensed">
+        <thead>
+            <tr class="bg-primary">
+                <th>QUESTION ID</th>
+                <th>QUESTION TITLE</th>
+                <th>QUESTION DESCRIPTION</th>
+                <th>Answer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let f of formData">
+                <td>{{f.id}}</td>
+                <td>{{f.qtitle}}</td>
+                <td>{{f.qdesc}}</td>
+                <td>{{f.answer}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>

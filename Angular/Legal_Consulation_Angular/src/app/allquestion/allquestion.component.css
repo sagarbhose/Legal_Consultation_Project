@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1700px;
+}
+
+h2 {
+    color: #494545;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #edefec;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table th {
+    background-color: #e60000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width:12%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 37%;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 18%;
+}
+
+.bg-primary {
+    background-color: #3691f3;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e60000;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.btn-danger {
+    background-color: #e60000;
+}
+
+.btn.btn-primary {
+    background-color: #4CAF50;;
+}
+
+.btn:hover {
+    background-color: #d32020;
+}
+
+.btn.btn-primary:hover {
+    background-color: #439b46;;
+}

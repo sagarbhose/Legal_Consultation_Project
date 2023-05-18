@@ -1,0 +1,88 @@
+.profile-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .edit-box {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(54, 49, 49);
+  }
+  
+  hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 2px solid #cab8b8;
+  }
+  
+  .profile-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .link-container {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .link a {
+    color: #1f93e0;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .view-button-container {
+    text-align: right;
+  }
+  
+  .view-button .btn {
+    padding: 12px 24px;
+    background-color: #e60000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .view-button .btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .view-button .btn-danger {
+    background-color: #cc0000;
+  }
+  
+  .view-button .btn-danger:hover {
+    background-color: #cc0000;
+  }
+  
+  .link-container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

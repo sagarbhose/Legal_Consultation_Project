@@ -1,0 +1,47 @@
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: stretch; /* align items vertically to stretch */
+    /* background-image: url("//www.kaanoon.com/assets/banner-homepage-d44e81184f0090f9f9e8ee8a1a2d952a9b49a36cb9a9f6f3b87421aec256d2d8.jpg"); */
+    background-image: url("/assets/images/banner-homepage.jpg");
+    background-size: cover;
+    background-position: right center;
+    padding: 20px;
+    height: 500px;
+  }
+  
+  .banner-item {
+    flex: 1;
+    margin-left: 200px;
+  }
+  .banner-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 392px;
+    margin-left: 100px;
+  }
+  .banner-img {
+    text-align: right;
+  }
+  
+  .banner-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover; /* make the image fill the container */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      height: auto; /* adjust height for smaller screens */
+    }
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* This is used to make sure the navbar is on top of other elements */
+  }
+  

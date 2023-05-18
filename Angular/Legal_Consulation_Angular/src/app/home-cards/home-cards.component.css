@@ -1,0 +1,120 @@
+
+   .container {
+    margin-top: 50px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 30%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card.ask-card {
+    background-image: url("/assets/images/ask_lawyer_bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card.talk-card {
+    background-image: url("/assets/images/talk_lawyer_bg.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card.hire-card {
+    background-image: url("/assets/images/hire_lawyer_bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .card-text {
+    text-align: center;
+    color: #f5f5f5;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 16px;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+  }
+  
+  .card-button {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card-button:hover {
+    background-color: #333333;
+  }
+  
+  .card-icon.ask-icon {
+    background-image: url("/assets/images/question_mark.png");
+  }
+  
+  .card-icon.talk-icon {
+    background-image: url("/assets/images/phone_call.png");
+  }
+  
+  .card-icon.hire-icon {
+    background-image: url("/assets/images/question_mark.png");
+  }
+
+  .card.ask-card::before,
+  .card.talk-card::before,
+  .card.hire-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+    background-blend-mode: overlay;
+  }
+  
+
+.card-text {
+  position: relative;
+  z-index: 2;
+}
+
+.card-button {
+  position: relative;
+  z-index: 2;
+}
+
+
+  

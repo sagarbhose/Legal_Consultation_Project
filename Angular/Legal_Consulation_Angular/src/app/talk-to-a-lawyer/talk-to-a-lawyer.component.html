@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+  <div class="container">
+    <!-- <div class="text-center">
+      <img src="assets/images/Sign In.png" alt="Login Logo" class="login-logo">
+    </div> -->
+    <h3>Talk to a Lawyer for 15 minutes</h3>
+    <form class="form-horizontal" #myform="ngForm" (ngSubmit)="onsubmit()">
+
+        <div class="form-group">
+            <textarea  id="exampleFormControlTextarea1" rows="2" placeholder="Briefly describe your issue"></textarea>
+        </div>
+        
+        <!-- <div class="form-group">
+           <select {[ngModel]}="l" name="l" ngModel>
+            <option *ngfor="let l in lawyer" name="lname">{{l.lname}}</option>
+           </select>
+        </div> -->
+        <!-- <div class="form-group">
+            <select [(ngModel)]="selectedLawyer" name="l" placeholder="Select a lawyer">
+              <option *ngFor="let l of lawyer" [value]="l">{{l.lname}}</option>
+            </select>
+          </div> -->
+
+        <div class="form-group">
+            <input type="submit" value="Get Details">
+        </div>
+
+       
+
+    
+
+    </form>
+  </div>
+</body>
+</html>

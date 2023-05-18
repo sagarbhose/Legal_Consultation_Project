@@ -1,0 +1,58 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 400px;
+    width: 100%;
+    background-color:rgb(49, 47, 47);
+    color: white;
+   
+ }
+ ul{
+   
+   text-align: left;  
+   font-size: 15px;
+   color: white;
+   text-align: left;
+ }
+ .row{
+   text-align: end;
+
+ }
+ 
+ 
+ 
+ h5 {
+ 
+   padding: 10px;  
+ text-align: center;  
+  top: 20px;
+ font-size: 20px;
+font-size: large;
+ color: white;
+ font-size: 20px;
+  font-style: normal;
+  font-family: bold;
+
+
+ }  
+.container {
+   color: white;
+   text-align: left;
+   top: 30%;
+
+}
+li {
+   color: white;
+  text-align: center;
+}
+
+p {
+   font-size: 17px;
+   flex-direction: row;
+}
+
+controls {
+    text-align: left;
+
+}

@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+    <button class="btn btn-primary" routerLink="/Lawyer">Home</button>
+    <h2>QUESTIONS</h2>
+    <table class="table table-bordered table-striped table-condensed">
+        <thead>
+            <tr class="bg-primary">
+                <th>QUESTION ID</th>
+                <th>DOMAIN</th>
+                <th>QUESTION TITLE</th>
+                <th>QUESTION DESCRIPTION</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let f of formData">
+                <td>{{f.qid}}</td>
+                <td>{{f.domain}}</td>
+                <td>{{f.qtitle}}</td>
+                <td>{{f.qdesc}}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="giveans(f.qid)">Give Answer</button>
+                    <button class="btn btn-danger" (click)="deletequestionbyId(f.qid)">Delete Question</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>

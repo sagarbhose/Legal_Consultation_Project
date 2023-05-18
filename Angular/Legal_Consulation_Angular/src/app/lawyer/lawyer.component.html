@@ -1,0 +1,59 @@
+<div class="profile-page">
+    <div class="edit-box">
+        <h3>MY PROFILE</h3>
+        <hr />
+        <div class="profile-link">
+            <div class="icon">
+                <a>
+                    <img src="assets/images/Personal_Details.png" />
+                </a>
+            </div>
+            <div class="link-container">
+                <div class="link">
+                    <a>My Personal Details</a>
+                </div>
+            </div>
+            <div class="view-button-container">
+                <div class="view-button">
+                    <a class="btn btn-primary" routerLink="/Lawyer-Update">View | Update</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="profile-link">
+            <div class="icon">
+                <a>
+                    <img src="assets/images/Recent_Cases.png" />
+                </a>
+            </div>
+            <div class="link-container">
+                <div class="link">
+                    <a>Questions</a>
+                </div>
+            </div>
+            <div class="view-button-container">
+                <div class="view-button">
+                    <a class="btn btn-primary" routerLink="/Allquestion">View | Update</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="profile-link">
+            <div class="icon">
+                <a href="https://www.kaanoon.com/lawyer/delete-profile">
+                    <img src="assets/images/Delete.png" />
+                </a>
+            </div>
+            <div class="link-container">
+                <div class="link">
+                    <a href="https://www.kaanoon.com/lawyer/delete-profile">Delete My Profile</a>
+                </div>
+            </div>
+            <div class="view-button-container">
+                <div class="view-button">
+                    <a class="btn btn-primary" (click)="deleteLawyer()">Delete Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
